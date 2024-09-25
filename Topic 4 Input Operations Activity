@@ -1,0 +1,83 @@
+//TOPIC 4 INPUT OPERATIONS ACTIVITY 50/50 SCORE
+
+// 1ST Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#include<iostream>
+#include<string>
+
+int main(){
+    std::string name;
+    std::cout << "Enter your name: ";
+    std::getline(std::cin, name);
+    std::cout << "Welcome, " << name << "!" << std::endl;
+    
+    return 0;
+    
+}
+
+// 2ND Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    string name, age, city;
+    
+    cout<<"Enter your name: ";
+    getline(cin, name);
+    cout<<"Enter your age: ";
+    getline(cin, age);
+    cout<<"Enter your city: ";
+    getline(cin, city);
+    
+    cout<< "Name: "<<name<<"\nAge: "<<age<<"\nCity: "<<city<<"\n";
+    
+    return 0;
+}
+
+// 3RD Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#include<iostream>
+#include<string>
+#include<iomanip>
+
+int main(){
+    std::string postDate;
+    std::string postTime;
+    double postReach;
+    double postEngagement;
+    float postDuration;
+    char postCategory;
+    
+    std::cout << "Enter Post Date: ";
+    std::getline(std::cin, postDate);
+    
+    std::cout << "Enter Post Time: ";
+    std::getline(std::cin, postTime);
+    
+    std::cout << "Enter Post Reach: ";
+    std::cin >> postReach;
+    
+    std::cout << "Enter Post Engagement: ";
+    std::cin >> postEngagement;
+    
+    std::cout << "Enter Post Duration: ";
+    std::cin >> postDuration;
+    
+    std::cout << "Enter Post Category: ";
+    std::cin >> postCategory;
+    
+    
+    std::cout << "\nPost Scheduled:\n";
+    std::cout << "Date: " << postDate << "\n";
+    std::cout << "Time: " << postTime << "\n";
+    std::cout << "Reach: " << std::fixed << std::setprecision(2) << postReach << "\n";
+    std::cout << "Engagement: " << std::fixed << std::setprecision(2) << postEngagement << "\n";
+    std::cout << "Duration: " << std::fixed  << std::setprecision(2) << postDuration << "\n";
+    std::cout << "Category: " << postCategory << "\n";
+    return 0;
+}
+// GWAPO SI FRANCIS UY
+// if std::setprecision(2) dili mag gana make sure naa "#include<iomanip>"
+// the "2" in setprecision is to make sure only 2 numbers after decimal will come out
+
