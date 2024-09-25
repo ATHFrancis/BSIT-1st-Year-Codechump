@@ -1,6 +1,6 @@
 //TOPIC 4 INPUT OPERATIONS ACTIVITY 50/50 SCORE
 
-// 1ST Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// 1ST Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #include<iostream>
 #include<string>
@@ -15,7 +15,7 @@ int main(){
     
 }
 
-// 2ND Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// 2ND Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #include<iostream>
 using namespace std;
@@ -35,7 +35,7 @@ int main(){
     return 0;
 }
 
-// 3RD Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+// 3RD Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #include<iostream>
 #include<string>
@@ -81,3 +81,133 @@ int main(){
 // if std::setprecision(2) dili mag gana make sure naa "#include<iomanip>"
 // the "2" in setprecision is to make sure only 2 numbers after decimal will come out
 
+// 4TH Program Project <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#include<iostream>
+#include<string>
+
+int main(){
+    std::string title, author, genre, library, memberID, returnDate;
+    int yearOfPublications;
+    
+    std::cout << "Enter the book title: ";
+    std::getline(std::cin, title);
+    
+    std::cout << "Enter the author: ";
+    std::getline(std::cin, author);
+    
+    std::cout << "Enter the year of publication: ";
+    std::cin >> yearOfPublications;
+    std::cin.ignore();
+    
+    std::cout << "Enter the genre: ";
+    std::getline(std::cin, genre);
+    
+    std::cout << "Enter the library: ";
+    std::getline(std::cin, library);
+    
+    std::cout << "Enter your member ID: ";
+    std::getline(std::cin, memberID);
+    
+    std::cout << "Enter the return date: ";
+    std::getline(std::cin, returnDate);
+    
+    std::cout << "You have successfully reserved the book " << "'" << title << "'" << " by " << author << "." << "\n";
+    std::cout << "Year of Publication: " << yearOfPublications << "\n";
+    std::cout << "Genre: " << genre << "\n";
+    std::cout << "Library: " << library << "\n";
+    std::cout << "Member ID: " << memberID << "\n";
+    std::cout << "Return Date: " << returnDate << "\n";
+    
+    return 0;
+} // DILI MALIBOG KAY HUMANA NAKOG KALIBOG ANI PERO PERFECT NI
+// POGI SI FRANCIS UY
+
+// 5TH Program Problem <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+#include<iostream>
+#include<string>
+#include<iomanip>
+
+int main(){
+    std::string recipient;
+    std::string message;
+    std::string name;
+    std::string subject;
+    std::string version;
+    std::string status;
+    std::string code;
+    std::string location;
+    std::string companyName;
+    std::string website;
+    std::string phone;
+    std::string jobTitle;
+    std::string department;
+    float discount = 00.0;
+    int age;
+    
+    std::cout << "Enter the recipient: ";
+    std::getline(std::cin, recipient);
+    
+    std::cout << "Enter the message: ";
+    std::getline(std::cin, message);
+    
+    std::cout << "Enter the name: ";
+    std::getline(std::cin, name);
+    
+    std::cout << "Enter the subject: ";
+    std::getline(std::cin, subject);
+    
+    std::cout << "Enter the version: ";
+    std::getline(std::cin, version);
+    
+    std::cout << "Enter the discount: ";
+    std::cin >> discount;
+    
+    std::cout << "Enter the status: ";
+    std::cin >> status;
+    
+    std::cout << "Enter the code: ";
+    std::cin >> code;
+    
+    std::cout << "Enter the location: ";
+    std::cin >> location;
+    
+    std::cout << "Enter the age: ";
+    std::cin >> age;
+    std::cin.ignore();
+    
+    std::cout << "Enter the company name: ";
+    std::getline(std::cin, companyName);
+    
+    std::cout << "Enter the website: ";
+    std::getline(std::cin, website);
+    
+    std::cout << "Enter the phone: ";
+    std::getline(std::cin, phone);
+    
+    std::cout << "Enter the job title: ";
+    std::getline(std::cin, jobTitle);
+    
+    std::cout << "Enter the department: ";
+    std::getline(std::cin, department);
+    
+    //FORMAT SA KANANG RESULT OR ANSWER
+    std::cout << "Dear " << recipient << ", " << "I hope this email finds you well." "\n";
+    std::cout << "" << message << "\n";
+    std::cout << "Subject: " << subject << "\n";
+    std::cout << "Sender: " << name << "\n";
+    std::cout << "Version: " << version << "\n";
+    std::cout << "Discount: " << std::fixed << std::setprecision(2) << discount << '%' << "\n";
+    std::cout << "Status: " << status << "\n";
+    std::cout << "Code: " << code << "\n";
+    std::cout << "Location: " << location << "\n";
+    std::cout << "Age: " << age << "\n";
+    std::cout << "Company: " << companyName << "\n";
+    std::cout << "Website: " << website << "\n";
+    std::cout << "Phone: " << phone << "\n";
+    std::cout << "Job Title: " << jobTitle << "\n";
+    std::cout << "Department: " << department << "\n";
+    
+    return 0;
+}
